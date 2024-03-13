@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "EFbinner";
+  src: url("Binner Regular.woff2");
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 250 900;
+}
+
+@font-face {
+	font-family: "Binner";
+	src: url("binnern.woff2");
+	font-style: normal;
+	font-stretch: normal;
+	font-weight: 250 900;
+  }  
+
+:root {
+	/* Je kan variabelen gebruiken. Handig! */
+	--page-background: rgb(233,218,189);
+	--body-color: rgb(36,33,27);
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* BASICS */
+html {
+	/* 
+	Kies hier zelf een passende font-stack. Deze is zeker niet goed genoeg!
+	https://modernfontstacks.com/
+	*/
+	font-family: Georgia, serif;
+	font-family: 'EFBinner','Segoe Print', 'Bradley Hand';
+}
+
+body {
+	background-color: var(--page-background);
+	color: var(--body-color);
+	margin: 0;
+}
+
+/* LAYOUT */
+
+main {
+	margin-left: 10em;
+	margin-right: 10em;
+}
+
+
+img {
+	width: 30%;
+}
+
+p {
+	font-family: 'Binner';
+}
+
+h1 {
+	text-align: center;
+	font-size: 15em;
+	margin: 0em;
+	background-color: rgb(187,192,170);
+	width: 100%;
+}
+
+h2 {
+	font-size: 3em;
+	margin: 0em;
+	color: rgb(192,153,120);
+}
+
+main article:nth-of-type(1) {
+	overflow: hidden;
+}
+
+
+main article:nth-of-type(1) p {
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+@keyframes move-words {
+	0% {
+	  left: 100%;
+	}
+	100% {
+	  left: -100%;
+	}
+
+}
+
+.words {
+	position: relative;
+	animation: move-words 20s linear infinite;
+	margin: 0;
+  }
+  
+
+main article:nth-of-type(1) p:nth-of-type(2) {
+	text-align: center;
+	font-size: 3em;
+	letter-spacing: 1em;
+	color: rgb(187,192,170);
+}
+
+
+main article:nth-of-type(2) {
+	overflow: hidden;
+	margin-bottom: 1.5em
+}
+
+main article:nth-of-type(2) section {
+	display: flex;
+	gap: 3em;
+}
+
+main article:nth-of-type(2) section p {
+	font-size: 1.5em;
+	text-align: center;
+	justify-content: center;
+}
+
+main article:nth-of-type(2) p {
+	text-align: center;
+	font-size: 10em;
+	letter-spacing: .5em;
+}
+
+
+main article:nth-of-type(3) {
+	margin-bottom: 1.5em;
+}
+
+
+main article:nth-of-type(3) {
+	display: flex;
+	gap: 3em;
+	flex-direction: row;
+	align-items: top;
+	margin-bottom: 1.5em;
+}
+
+main article:nth-of-type(3) p {
+	line-height: 2em;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+
+main article:nth-of-type(4) section {
+	display: flex;
+	gap: 2em;
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+}
+
+main article:nth-of-type(4) p {
+	font-size: 1em;
+	text-align: center;
+	letter-spacing: .5em;
+}
+
+main article:nth-of-type(4) h2 {
+	text-align: center;
+}
+
+main article:nth-of-type(5) {
+	margin-top: 3em;
+	text-align: center;
+}
+
+
+main article:nth-of-type(5) p {
+	font-size: 2.5em;
+	letter-spacing: 1.5em;
+	margin: .5em;
+}
+
+main article:nth-of-type(5) section {
+	margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
